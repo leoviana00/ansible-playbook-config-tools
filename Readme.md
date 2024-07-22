@@ -13,5 +13,37 @@
 </p>
 
 <p align="center">
-  <img alt="Monitoring" src="data/monitoring.png">
+  <img alt="Ansible" src="data/ansible.png">
 </p>
+
+## 💡 Projeto
+- Instalar e configurar de forma automática através do Ansible alguns serviços que costumo utilizar no dia a dia.
+
+## ✨ Tecnologias
+- Ansible
+- Vagrant
+- Virtualbox
+- Yaml
+
+## 👣 Roadmap
+
+- [ ] [Subir uma vm para realização dos testes]
+  - [ ] Ubunto 20.04
+  - [ ] 2 x 2
+- [ ] [Configuração do Ansible - Ansible cfg]
+- [ ] [Definir um escopo]
+- [ ] [Criação do arquivo de inventário]
+- [ ] [Criação de uma chave ssh para o projeto]
+- [ ] [Definição e criação das roles ]
+  - [ ] [Preparação do host - Inst. das dependências necessárioas]
+  - [ ] [Role para instalação e configuração do Docker]
+  - [ ] [Role para instalação e configuração do Java]
+  - [ ] [Role para instalação e configuração do Maven]
+  - [ ] [Role para instalação e configuração do VirtualBox]
+  - [ ] [Role para instalação e configuração da VPN Wireguard]
+  - [ ] [Role para instalação e configuração da IDE Vscode]
+- [ ] [Criação do playbook]
+- [ ] [Realização dos testes]
+ 
+
+## 📄 Referências

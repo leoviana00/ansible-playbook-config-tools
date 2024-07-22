@@ -1,0 +1,21 @@
+---
+all:
+  vars:
+    ambiente: vagrant
+    ansible_user: vagrant
+    ansible_ssh_private_key_file: keys/work
+  ## Enabled features
+    virtualbox_enabled: true
+    docker_enabled: true
+    java_enabled: true
+    vpn_enabled: true
+    vscode_enabled: true
+
+  hosts:
+    lab-env-work:
+      ansible_host: 192.168.50.11
+
+  children:
+    worker:
+      hosts:
+        lab-env-work:

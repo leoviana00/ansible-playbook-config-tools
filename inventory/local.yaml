@@ -1,0 +1,21 @@
+---
+all:
+  vars:
+  ## Vars configs
+    ansible_user: leoviana
+    ansible_connection: local
+    ansible_sudo_pass: Password
+  ## Enabled features
+    virtualbox_enabled: false
+    docker_enabled: true
+    java_enabled: true
+    vpn_enabled: false
+    vscode_enabled: false
+
+  hosts:
+    localhost: &local
+
+  children:
+    local:
+      hosts:
+        localhost:

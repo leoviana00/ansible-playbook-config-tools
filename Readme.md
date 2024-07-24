@@ -6,20 +6,20 @@
 </p>
 
 <p align="center">
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-roadmap">Roadmap</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-referências">Referências</a>
+  <a href="#-references">References</a>
 </p>
 
 <p align="center">
   <img alt="Ansible" src="data/ansible.png">
 </p>
 
-## 💡 Projeto
-- Instalar e configurar de forma automática através do Ansible alguns serviços que costumo utilizar no dia a dia.
+## 💡 Project
+- Automatically install and configure some services that I usually use on a daily basis through Ansible.
 
-## ✨ Tecnologias
+## ✨ Technologies
 - Ansible
 - Vagrant
 - Virtualbox
@@ -27,23 +27,23 @@
 
 ## 👣 Roadmap
 
-- [ ] [Subir uma vm para realização dos testes]
-  - [ ] Ubunto 20.04
-  - [ ] 2 x 2
-- [ ] [Configuração do Ansible - Ansible cfg]
-- [ ] [Definir um escopo]
-- [ ] [Criação do arquivo de inventário]
-- [ ] [Criação de uma chave ssh para o projeto]
-- [ ] [Definição e criação das roles ]
-  - [ ] [Preparação do host - Inst. das dependências necessárioas]
-  - [ ] [Role para instalação e configuração do Docker]
-  - [ ] [Role para instalação e configuração do Java]
-  - [ ] [Role para instalação e configuração do Maven]
-  - [ ] [Role para instalação e configuração do VirtualBox]
-  - [ ] [Role para instalação e configuração da VPN Wireguard]
-  - [ ] [Role para instalação e configuração da IDE Vscode]
-- [ ] [Criação do playbook]
-- [ ] [Realização dos testes]
+- [x] [Upload a vm to perform the tests]
+  - [x] Ubunto 20.04
+  - [x] 2 x 2
+- [x] [CAnsible Configuration - Ansible cfg]
+- [x] [Define a scope]
+- [x] [Creating the inventory file]
+- [x] [Creating an ssh key for the project]
+- [ ] [Definition and creation of roles ]
+  - [x] [Host Preparation - Installation of required dependencies]
+  - [ ] [Role for Docker Installation and Configuration]
+  - [ ] [Role for installing and configuring Java ]
+  - [ ] [Role for installing and configuring Java Maven]
+  - [ ] [Role for installing and configuring Java VirtualBox]
+  - [ ] [Role for installing and configuring Java VPN Wireguard]
+  - [ ] [Role for installing and configuring Java IDE Vscode]
+- [x] [Playbook creation]
+- [ ] [Testing ]
  
 
-## 📄 Referências
+## 📄 References

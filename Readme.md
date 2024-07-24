@@ -17,7 +17,7 @@
 </p>
 
 ## 💡 Project
-- Automatically install and configure some services that I usually use on a daily basis through Ansible.
+- Use Ansible to automatically install and configure some services that I usually use on a daily basis..
 
 ## ✨ Technologies
 - Ansible

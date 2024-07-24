@@ -1,0 +1,46 @@
+---
+
+- name: Configure Docker
+  hosts: "{{ varlocal | default('worker') }}"
+  remote_user: "{{ ansible_user }}"
+  become: true
+  tags: docker
+  roles:
+    - role: configure_docker
+      when: docker_enabled == true
+
+- name: Configure Java and Apache Maven
+  hosts: "{{ varlocal | default('worker') }}"
+  remote_user: "{{ ansible_user }}"
+  become: true
+  tags: java
+  roles:
+    - role: configure_java
+      when: java_enabled == true
+
+- name: Configure Virtualbox
+  hosts: "{{ varlocal | default('worker') }}"
+  remote_user: "{{ ansible_user }}"
+  become: true
+  tags: vbox
+  roles:
+    - role: configure_vbox
+      when: virtualbox_enabled == true
+
+- name: Setup VPN Wireguard
+  hosts: "{{ varlocal | default('worker') }}"
+  remote_user: "{{ ansible_user }}"
+  become: true
+  tags: vpn
+  roles:
+    - role: configure_vpn
+      when: vpn_enabled == true
+
+- name: Install VScode
+  hosts: "{{ varlocal | default('worker') }}"
+  remote_user: "{{ ansible_user }}"
+  become: true
+  tags: vscode
+  roles:
+    - role: configure_vscode
+      when: vscode_enabled == true

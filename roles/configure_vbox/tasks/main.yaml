@@ -1,0 +1,30 @@
+---
+
+- name: Ensure VirtualBox Repository key exists
+  ansible.builtin.apt_key:
+    url: https://www.virtualbox.org/download/oracle_vbox_2016.asc
+    state: present
+
+- name: Ensure APT repository file exists
+  ansible.builtin.apt_repository:
+    repo: "deb https://download.virtualbox.org/virtualbox/debian {{ ansible_distribution_release }} contrib"
+    state: present
+    filename: virtualbox
+
+- name: Ensure VirtualBox is installed
+  ansible.builtin.apt:
+    name: "virtualbox-{{ virtualbox_version }}"
+    state: present
+    update_cache: true
+
+- name: Create directory /etc/vbox/networks.conf
+  ansible.builtin.file:
+    path: /etc/vbox
+    state: directory
+    mode: '0755'
+
+- name: Creating networks.conf
+  ansible.builtin.copy:
+    dest: /etc/vbox/networks.conf
+    content: |
+      * 0.0.0.0/0 ::/0

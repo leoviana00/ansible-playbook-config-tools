@@ -1,0 +1,21 @@
+---
+
+- name: install wireguard package
+  ansible.builtin.apt:
+    name: wireguard
+    state: present
+    update_cache: yes
+
+- name: create client wireguard config
+  template:
+    dest: /etc/wireguard/wg0.conf
+    src: wg0.conf.j2
+    owner: root
+    group: root
+    mode: '0600'
+
+# - name: start wireguard and enable on boot
+#   ansible.builtin.systemd_service:
+#     name: wg-quick@wg0
+#     enabled: yes
+#     state: started

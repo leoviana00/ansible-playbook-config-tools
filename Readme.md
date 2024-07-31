@@ -36,14 +36,14 @@
 - [x] [Creating an ssh key for the project]
 - [ ] [Definition and creation of roles ]
   - [x] [Host Preparation - Installation of required dependencies]
-  - [ ] [Role for Docker Installation and Configuration]
-  - [ ] [Role for installing and configuring Java ]
-  - [ ] [Role for installing and configuring Java Maven]
-  - [ ] [Role for installing and configuring Java VirtualBox]
-  - [ ] [Role for installing and configuring Java VPN Wireguard]
-  - [ ] [Role for installing and configuring Java IDE Vscode]
+  - [x] [Role for Docker Installation and Configuration]
+  - [x] [Role for installing and configuring Java ]
+  - [x] [Role for installing and configuring Java Maven]
+  - [x] [Role for installing and configuring Java VirtualBox]
+  - [x] [Role for installing and configuring Java VPN Wireguard]
+  - [x] [Role for installing and configuring Java IDE Vscode]
 - [x] [Playbook creation]
-- [ ] [Testing ]
+- [x] [Testing ]
  
 
 ## 📄 References
